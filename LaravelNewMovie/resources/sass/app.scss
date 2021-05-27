@@ -21,6 +21,10 @@ body{
     flex-direction: column;
 
     .row {
-        
+        content: "";
+        display: table;
+        clear: both;
+
+        margin: 10px;
     }
 }
