@@ -5,9 +5,9 @@
 use App\Film;
 use Faker\Generator as Faker;
 
-$factory->define(Model::class, function (Faker $faker) {
+$factory->define(Film::class, function (Faker $faker) {
     return [
-        'name' => $faker -> words($nb = 3),
+        'name' => $faker -> word,
         'description' => $faker -> text($maxNbChars = 128),
         'date' => $faker -> dateTime($max = 'now', $timezone = null),
         'vote' => $faker -> numberBetween($min = 0, $max = 5),
