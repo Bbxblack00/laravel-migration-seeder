@@ -9,15 +9,15 @@ body {
 }
 
 .container {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.container .row {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+
+.container .row {
+  content: "";
+  display: table;
+  clear: both;
 }
 
