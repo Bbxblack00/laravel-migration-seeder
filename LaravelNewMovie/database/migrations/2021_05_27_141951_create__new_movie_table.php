@@ -15,11 +15,12 @@ class CreateNewMovieTable extends Migration
     {
         Schema::create('_new_movie', function (Blueprint $table) {
             $table->bigIncrements('id');
+            
             $table->char('name', 128);
             $table->string('description')->nullable();
             $table->date('date');
             $table->integer('vote');
-            
+
             $table->timestamps();
         });
     }
